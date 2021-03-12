@@ -1,5 +1,5 @@
 # Chocolatey Setup
-Esse repositório tem como objetivo facilitar o setup quando é formatado/troca de máquina.
+Esse repositório tem como objetivo facilitar o setup quando é formatado/troca de máquina. Foi utilizado o chocolatey que é um gerenciador de pacotes para o windows.
 
 ## Pré-requisitos
 * Baixar o .net framework 4.6
