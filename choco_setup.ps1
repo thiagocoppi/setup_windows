@@ -1,4 +1,4 @@
-$Packages = 'nodejs', 'dotnetcore', 'dotnetcore-runtime', 'tortoisegit', 'git', 'spotify', 'dbeaver', 'vscode', 'visualstudio2019professional', 'postman', 'discord', 'lightshot.install'
+$Packages = 'nodejs-lts', 'jdk8', 'vscode', 'visualstudio2019community', 'spotify', 'winmerge', 'dbeaver', 'slack', 'winscp', 'wsl', 'wsl-ubuntu-1804', 'drawio', 'git', 'tortoisegit', '7zip', 'docker-desktop', 'notepadplusplus', 'sharex', 'office365proplus', 'microsoft-teams', 'postman'
 
 ForEach ($PackageName in $Packages)
 {
