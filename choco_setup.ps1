@@ -1,4 +1,4 @@
-$Packages = 'nodejs-lts', 'vscode', 'visualstudio2022enterprise --package-parameters "--locale en-US"', 'slack', 'visualstudio2022-workload-netweb', 'yarn', 'wsl2', 'wsl-ubuntu-2004', 'docker-desktop', 'spotify', 'dbeaver', 'drawio', 'git', 'tortoisegit', '7zip', 'notepadplusplus', 'microsoft-teams', 'postman', 'discord', 'javaruntime', 'git'
+$Packages = 'nodejs-lts', 'vscode', 'visualstudio2022enterprise --package-parameters "--locale en-US"', 'slack', 'visualstudio2022-workload-netweb', 'yarn', 'wsl2', 'wsl-ubuntu-2004', 'docker-desktop', 'spotify', 'dbeaver', 'git', 'tortoisegit', '7zip', 'notepadplusplus', 'microsoft-teams', 'postman', 'discord', 'javaruntime', 'git'
 
 ForEach ($Package in $Packages)
 {
