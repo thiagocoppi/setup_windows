@@ -1,6 +1,11 @@
-$Packages = 'nodejs-lts', 'vscode', 'visualstudio2019professional', 'spotify', 'dbeaver', 'drawio', 'git', 'tortoisegit', '7zip', 'notepadplusplus', 'microsoft-teams', 'postman', 'discord', 'javaruntime', 'oracle-sql-developer', 'git', 'steam-client'
+$Packages = 'nodejs-lts', 'vscode', 'visualstudio2022enterprise --package-parameters "--locale en-US"', 'slack', 'visualstudio2022-workload-netweb', 'yarn', 'wsl2', 'wsl-ubuntu-2004', 'docker-desktop', 'spotify', 'dbeaver', 'drawio', 'git', 'tortoisegit', '7zip', 'notepadplusplus', 'microsoft-teams', 'postman', 'discord', 'javaruntime', 'git'
 
-ForEach ($PackageName in $Packages)
+ForEach ($Package in $Packages)
 {
-    choco install $PackageName -y
+    $Command = "choco install $Package -y --exit-when-reboot-detected"
+    Write-Host "Executing command: $Command"
+    Invoke-Expression $Command
 }
+
+Write-Host "Restarting computer..."
+Restart-Computer -Confirm
